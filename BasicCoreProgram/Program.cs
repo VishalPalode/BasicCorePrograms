@@ -11,8 +11,8 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic core program");
-            LeapYear head = new LeapYear();
-            head.Check_leap_year();
+            PowerOfTwo head = new PowerOfTwo();
+            head.Powertwo();
             Console.ReadLine();
         }
     }
