@@ -11,8 +11,8 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic core program");
-            FlipCoin head = new FlipCoin();
-            head.Checkpercentage();
+            LeapYear head = new LeapYear();
+            head.Check_leap_year();
             Console.ReadLine();
         }
     }
