@@ -11,8 +11,8 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic core program");
-            PowerOfTwo head = new PowerOfTwo();
-            head.Powertwo();
+            Harmonic head = new Harmonic();
+            head.Harmonic_number();
             Console.ReadLine();
         }
     }
