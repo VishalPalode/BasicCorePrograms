@@ -10,9 +10,10 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Basic core program");
-            Harmonic head = new Harmonic();
-            head.Harmonic_number();
+            Console.WriteLine("welcome to basic core programs");
+            BasicPrograms basicPrograms = new BasicPrograms();
+            basicPrograms.Factorization(24);
+
             Console.ReadLine();
         }
     }
