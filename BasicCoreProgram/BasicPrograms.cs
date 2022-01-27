@@ -8,30 +8,22 @@ namespace BasicCoreProgram
 {
     internal class BasicPrograms
     {
-        public void checkLargestNumber()
+        public void checkVowelOrNot()
         {
-            Console.WriteLine("Enter first number: ");
-            int firstNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter second number: ");
-            int secondNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter third number: ");
-            int thirdNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" Enter a character : ");
+            char ch = Convert.ToChar(Console.ReadLine());
 
-            if (firstNum > secondNum && firstNum > thirdNum)
+            if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' || ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
             {
-                Console.WriteLine(firstNum + " is the largest among entered three numbers");
+                Console.WriteLine(ch + " is a Vowel ");
             }
-            else if (secondNum > firstNum && secondNum > thirdNum)
+            else if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
             {
-                Console.WriteLine(secondNum + " is the largest among entered three numbers");
-            }
-            else if (thirdNum > firstNum && thirdNum > secondNum)
-            {
-                Console.WriteLine(thirdNum + " is the largest among entered three numbers");
+                Console.WriteLine(ch + " is a Consonant ");
             }
             else
             {
-                Console.WriteLine("All three entered  numbers are equal");
+                Console.WriteLine(ch + " not an Alphabate");
             }
         }
     }
